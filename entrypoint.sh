@@ -4,6 +4,8 @@
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VERSION}/bin/linux/amd64/kubectl \
 && install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
+unset http_proxy
+unset https_proxy
 
 # Create kube directory
 if [ ! -d "$HOME/.kube" ]; then
