@@ -6,7 +6,8 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/v${KUBECTL_VE
 
 unset http_proxy
 unset https_proxy
-
+unset HTTPS_PROXY
+unset HTTPS_PROXY
 # Create kube directory
 if [ ! -d "$HOME/.kube" ]; then
 	mkdir -p $HOME/.kube
