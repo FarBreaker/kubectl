@@ -15,6 +15,6 @@ fi
 
 # paste kubeconfig
 echo $BASE64_KUBE_CONFIG | base64 -d > $HOME/.kube/config 
-
-
+ls $HOME/.kube/
+ls $HOME/.kube/config
 kubectl $*
