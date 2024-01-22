@@ -17,4 +17,6 @@ fi
 echo $BASE64_KUBE_CONFIG | base64 -d > $HOME/.kube/config 
 echo $BASE64_KUBE_CONFIG | base64 -d > /cicd-svc-kubeconfig.yml 
 
+ls -al
+pwd
 kubectl $*
